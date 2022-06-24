@@ -1,0 +1,57 @@
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+from dash.dependencies import Input, Output
+
+index_page = html.Div(style={
+'background-image':'url(/assets/fire1.jpg)',
+'background-size': 'cover',
+'textAlign':'center','position':'fixed',
+  'width':'100%',
+  'height':'100%',
+  'top':'0px',
+  'left':'0px',
+  'z-index':'1000',
+ },children=[
+html.H1('FIRE ANALYTICS',style={'color':'#ffd1b3'}),
+html.Br(),
+html.A(html.Button('Forest Fires In India',
+                       style={'background-color': '#4CAF50', 'border': 'none', 'color': 'white', 'padding': '15px 32px',
+                              'text-align': 'center',
+                              'text-decoration': 'none',
+                              'display': 'inline-block',
+                              'font-size': '16px',
+                              'margin': '4px 2px',
+                              'cursor': 'pointer', 'opacity': '0.6',
+                              'transition': '0.3s'}), href='/page-4'),
+ html.Br(),
+
+    html.A(html.Button('Fire Information',style={'background-color': '#4CAF50','border': 'none', 'color': 'white','padding': '15px 32px','text-align': 'center',
+  'text-decoration': 'none',
+  'display': 'inline-block',
+  'font-size': '16px',
+  'margin': '4px 2px',
+  'cursor': 'pointer','opacity': '0.6',
+  'transition': '0.3s'}),href='/page-1'),
+    html.Br(),
+    html.A(html.Button('Telangana Forest Cover',
+                       style={'background-color': '#4CAF50', 'border': 'none', 'color': 'white', 'padding': '15px 32px',
+                              'text-align': 'center',
+                              'text-decoration': 'none',
+                              'display': 'inline-block',
+                              'font-size': '16px',
+                              'margin': '4px 2px',
+                              'cursor': 'pointer', 'opacity': '0.6',
+                              'transition': '0.3s'}), href='/page-2'),
+html.Br(),
+html.A(html.Button('Prediction',
+                       style={'background-color': '#4CAF50', 'border': 'none', 'color': 'white', 'padding': '15px 32px',
+                              'text-align': 'center',
+                              'text-decoration': 'none',
+                              'display': 'inline-block',
+                              'font-size': '16px',
+                              'margin': '4px 2px',
+                              'cursor': 'pointer', 'opacity': '0.6',
+                              'transition': '0.3s'}), href='/page-3'),
+
+])
